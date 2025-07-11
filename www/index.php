@@ -1,3 +1,3 @@
 <?php
-header('Location: '. 'src/api_puntos.php');
+header('Location: '. 'src/views/login.php');
 exit;
