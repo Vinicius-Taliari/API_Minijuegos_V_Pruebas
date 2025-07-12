@@ -1,5 +1,14 @@
 <?php 
+session_start();
+
+if(isset($_SESSION['id_usuario'])){
+    header("Location: ../views/inicio.php");
+    exit();
+}
+
 require_once 'header.php';
+
+
 ?>
 
 <div class="container mt-5" style="max-width: 400px;">

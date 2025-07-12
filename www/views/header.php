@@ -9,4 +9,6 @@
     crossorigin="anonymous">
 </head>
 <body>
+<h1 class="display-5 text-center">Prueba Minijuegos</h1>
+
     

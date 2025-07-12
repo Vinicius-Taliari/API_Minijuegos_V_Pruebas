@@ -1,4 +1,11 @@
 <?php 
+session_start();
+
+if(isset($_SESSION['id_usuario'])){
+    header("Location: ../views/inicio.php");
+    exit();
+}
+
 require_once 'header.php';
 ?>
 

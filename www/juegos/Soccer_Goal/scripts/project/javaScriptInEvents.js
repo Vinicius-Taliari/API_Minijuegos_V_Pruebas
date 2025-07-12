@@ -9,7 +9,7 @@ const scriptsInEvents = {
 			runtime.globalVars.ultima_puntuacion = runtime.globalVars.score
 			console.log(runtime.globalVars.score)
 			function enviarDatos(data) {
-					fetch('http://localhost:8000/src/api_puntos.php', {
+					fetch('http://localhost:8000/server/api_puntos.php', {
 						method: 'POST',
 						headers: {
 						'Content-Type': 'application/json'
@@ -26,7 +26,8 @@ const scriptsInEvents = {
 					}
 			let data = runtime.globalVars.score
 			let dataPrepared = {
-				pt : data
+				pt : data,
+				id_juego : 3, // Soccer Goal
 			}
 			enviarDatos(dataPrepared)
 		}
