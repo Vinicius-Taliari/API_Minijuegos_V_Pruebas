@@ -9,6 +9,21 @@
     crossorigin="anonymous">
 </head>
 <body>
-<h1 class="display-5 text-center">Prueba Minijuegos</h1>
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1>Minijuegos</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../views/inicio.php">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../views/login.php">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../server/cerrar_sesion.php">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     

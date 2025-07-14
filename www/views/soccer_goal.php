@@ -7,10 +7,11 @@ if (!isset($_SESSION['id_usuario'])) {
     exit();
 }
 
+
 ?>
 
 <?php
-require_once '../views/header.php';
+require_once '../views/header.php'; //Importamos el header
 ?>
 
 <h4 class="text-center">Soccer Goal</h4>
@@ -19,6 +20,12 @@ require_once '../views/header.php';
     <iframe src="../juegos/Soccer_Goal/index.html" frameborder="0" class="container" height="400"></iframe>
 </div>
 
+
 <?php
-require_once '../views/footer.php';
+
+require_once '../views/ranking_soccer_goal.php'; //Importamos el ranking del juego Soccer Goal
+
+require_once '../views/posicion_jugador.php'; //Importamos la posición del jugador en el ranking
+
+require_once '../views/footer.php'; //Importamos el footer
 ?>

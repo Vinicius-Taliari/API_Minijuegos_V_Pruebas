@@ -34,6 +34,7 @@ if($_POST){
     if(empty($email) || empty($password) || empty($nombre) || empty($apellidos) || empty($telefono)){
         echo "Todos los campos son obligatorios.";
     } else {
+        global $db;
         if(verificarDatosDuplicados($email, $telefono)){
             header("Refresh: 5; URL=../views/crear_cuenta.php");
             echo "El email o el telefono ya están en uso.";
