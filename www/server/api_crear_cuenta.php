@@ -48,7 +48,7 @@ if($_POST){
                 "telefono" => $telefono,
                 "comunicaciones" => $comunicaciones
             ]);
-            $id_user = db->select("usuarios", [
+            $id_user = $db->select("usuarios", [
                 "id"
             ], [
                 "email" => $email
