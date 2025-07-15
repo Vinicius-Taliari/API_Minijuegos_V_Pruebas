@@ -18,7 +18,7 @@ var gameIncreaseSpeed = 5; //total speed to increase when score target reached
 var gameExtraBall = 1; //start number of balls drop when score target reached, increase by 1 for next speed
 var gameExtraBallMax = 5; //maximum extra balls drop
 
-var exitMessage = 'ARE YOU SURE YOU\nWANT TO QUIT THE GAME?'; //quit game message
+var exitMessage = 'ARE YOU SURE YOU\nWANFT TO QUIT THE GAME?'; //quit game message
 
 //Social share, [SCORE] will replace with game score
 var shareEnable = true; //toggle share
