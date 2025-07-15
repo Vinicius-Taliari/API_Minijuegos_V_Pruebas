@@ -54,7 +54,7 @@ if($_POST){
                 "email" => $email
             ]);
             $_SESSION['id_usuario'] = $id_user[0]['id'];
-            header("Refresh: 5; URL=../views/inicio.php");
+            header("Refresh: 2; URL=../views/inicio.php");
             echo "Cuenta creada correctamente.";
         }
     }

@@ -14,7 +14,7 @@ if($_POST){
         if(password_verify($password, $datos[0]['pass'])){
             $_SESSION['id_usuario'] = $datos[0]['id'];
             header("Refresh: 2; URL=../views/inicio.php");
-            echo "Inicio de sesión exitoso." . $_SESSION['id_usuario'];
+            echo "Inicio de sesión exitoso.";
         } else {
             header("Refresh: 2; URL=../views/login.php");
             echo "Contraseña incorrecta.";
