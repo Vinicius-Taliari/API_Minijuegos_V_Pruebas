@@ -12,6 +12,7 @@ function getRankingData($db, $id_juego) {
     SELECT puntos.id_user, usuarios.nombre, SUM(puntos.puntos) AS total_puntos
     FROM puntos
     JOIN usuarios ON puntos.id_user = usuarios.id
+    WHERE puntos.juego = $id_juego
     GROUP BY puntos.id_user
     ORDER BY total_puntos DESC
 ";

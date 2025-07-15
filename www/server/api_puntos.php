@@ -26,4 +26,6 @@ header("Access-Control-Allow-Credentials: true");
     ]);
     echo "Puntos insertados correctamente.";
   }
+
+  echo "Hola";
 ?>

@@ -10193,7 +10193,7 @@ let controlDeDatosDuplicados = true; //Variables auxiliar para evitar guardar el
 			
 			//Creamos una conexión a la API para enviar los puntos
 			function enviarDatos(data) {
-			fetch('http://localhost:8000/src/api_puntos.php', {
+			fetch('http://localhost:8000/server/api_puntos.php', {
 				method: 'POST',
 				headers: {
 				'Content-Type': 'application/json'
@@ -10211,8 +10211,11 @@ let controlDeDatosDuplicados = true; //Variables auxiliar para evitar guardar el
 			let enviarAPI = () => {
 				
 				if(intentos < 1 && puntos > 0 && controlDeDatosDuplicados){
-					let puntos_Preparados = {pt: puntos}   //Preparamos los datos a enviar
-					enviarDatos(puntos_Preparados);        //Enviamos los datos a la API
+					let dataPrepared = {
+						pt : puntos,
+						id_juego : 2, // Soccer Goal
+					}   //Preparamos los datos a enviar
+					enviarDatos(dataPrepared);        //Enviamos los datos a la API
 				}
 				controlDeDatosDuplicados = !controlDeDatosDuplicados; //Controlando BUG de datos duplicados
 			}
