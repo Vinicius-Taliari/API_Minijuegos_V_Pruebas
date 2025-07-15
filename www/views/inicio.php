@@ -18,6 +18,7 @@ require_once '../views/header.php';
     <div class="grid text-center container">
         <div class="g-col-4"><a href="soccer_goal.php">Soccer Goal</a></div>
         <div class="g-col-4"><a href="maestro_del_balon.php">Maestro del Balón</a></div>
+        <div class="g-col-4"><a href="balance_ball.php">Balance Ball</a></div>
     </div>
 </div>
 

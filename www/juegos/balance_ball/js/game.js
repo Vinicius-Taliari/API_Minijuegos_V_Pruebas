@@ -315,36 +315,26 @@ function toggleConfirm(con){
  * SAVE GAME - This is the function that runs to save game
  *
  */
-function saveGame(score) {
-    // Obtener el ID del juego (Balance Ball sería 1 según nuestra base de datos)
-    const juegoId = 1;
-    
+function saveGame(puntos) {    
     // Enviar la puntuación al servidor
-    fetch('/controllers/api-guardar-puntuaciones.php', {
-    method: 'POST',
-    credentials: 'include',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-        juego_id: juegoId,
-        puntuacion: score,
-        accion: 'sumar'
-    })
-})
-.then(response => response.text())  // <- Primero obtenemos texto sin parsear
-.then(text => {
-    console.log('Respuesta cruda del servidor:', text);
-    try {
-        const data = JSON.parse(text); // Intentamos parsear manualmente
-        if(data.success) {
-            alert(`¡Puntuación guardada! Total: ${data.puntuacion_total}`);
-        }
-    } catch (e) {
-        console.error('No es JSON válido:', e);
-    }
-})
-.catch(error => console.error('Error en fetch:', error));
+	let dataPrepared = {
+		pt: puntos,
+		id_juego: 1
+	}; // Balance Ball
+    fetch('http://localhost:8000/server/api_puntos.php', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(dataPrepared)
+				})
+					.then(response => response.text())
+					.then(resultado => {
+						console.log(resultado);                     // Comprobamos los datos recibidos por el servidor
+					})
+					.catch(error => {
+						console.error('Error:', error);
+					});
 }
  
  /*!
