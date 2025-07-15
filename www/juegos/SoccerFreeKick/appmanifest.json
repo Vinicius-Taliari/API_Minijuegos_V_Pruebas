@@ -1,6 +1,6 @@
 {
-	"name": "Soccer Free Kick",
-	"short_name": "Soccer Free Kick",
+	"name": "Soccer Free Kick admob",
+	"short_name": "Soccer Free Kick admob",
 	"description": "",
 	"start_url": "index.html",
 	"display": "fullscreen",
@@ -37,5 +37,6 @@
 			"sizes": "512x512",
 			"type": "image/png"
 		}
-	]
+	],
+	"screenshots": []
 }
