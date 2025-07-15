@@ -14,7 +14,7 @@ if (!isset($_SESSION['id_usuario'])) {
 require_once '../views/header.php'; //Importamos el header
 ?>
 
-<h4 class="text-center">Soccer Goal</h4>
+<h4 class="text-center">Rey del toque</h4>
 
 <div class="container text-center bg-success-subtle">
     <iframe src="../juegos/balance_ball/index.html" frameborder="0" class="rounded m-4" height="400" width="225"></iframe>
@@ -23,9 +23,9 @@ require_once '../views/header.php'; //Importamos el header
 
 <?php
 
-require_once '../views/ranking_maestro_balon.php'; //Importamos el ranking del juego Soccer Goal
+require_once '../views/ranking_balance_ball.php'; //Importamos el ranking del juego Soccer Goal
 
-require_once '../views/posicion_jugador_maestro.php'; //Importamos la posición del jugador en el ranking
+require_once '../views/posicion_jugador_balance_ball.php'; //Importamos la posición del jugador en el ranking
 
 require_once '../views/footer.php'; //Importamos el footer
 ?>

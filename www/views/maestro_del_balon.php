@@ -14,7 +14,7 @@ if (!isset($_SESSION['id_usuario'])) {
 require_once '../views/header.php'; //Importamos el header
 ?>
 
-<h4 class="text-center">Soccer Goal</h4>
+<h4 class="text-center">Maestro del balón</h4>
 
 <div class="container text-center bg-success-subtle">
     <iframe src="../juegos/SoccerFreeKick/index.html" frameborder="0" class="rounded m-4" height="400" width="225"></iframe>
