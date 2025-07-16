@@ -178,6 +178,10 @@ self.C3_JsPropNameTable = [
 	{Sprite13: 0},
 	{fadein: 0},
 	{mute: 0},
+	{shared0sheet: 0},
+	{shared0sheet2: 0},
+	{shared0sheet3: 0},
+	{shared0sheet4: 0},
 	{currentlevel: 0},
 	{playerx: 0},
 	{playery: 0},
@@ -257,5 +261,9 @@ self.InstanceType = {
 	bullet: class extends self.ISpriteInstance {},
 	Sprite13: class extends self.ISpriteInstance {},
 	fadein: class extends self.ISpriteInstance {},
-	mute: class extends self.ISpriteInstance {}
+	mute: class extends self.ISpriteInstance {},
+	shared0sheet: class extends self.ISpriteInstance {},
+	shared0sheet2: class extends self.ISpriteInstance {},
+	shared0sheet3: class extends self.ISpriteInstance {},
+	shared0sheet4: class extends self.ISpriteInstance {}
 }
